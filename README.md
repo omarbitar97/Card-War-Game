@@ -88,6 +88,7 @@ sizes
 6. Add player profiles and win tracking
 7. Implement unit tests, especially for the game logic
 
-Acknowledgments
+Acknowledgments:
+
 Deck of Cards API for providing the card data and images UniTask
 for making async operations in Unity much cleaner.
