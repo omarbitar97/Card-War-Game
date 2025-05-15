@@ -6,9 +6,7 @@ a bot opponent, First to 8 points wins!
 Project Overview:
 
 This project started as a technical assignment for a senior unity developer position - build a simple
-but complete Unity game that uses real-time API calls. I chose a card battle mechanic since I've
-always been a fan of card games like Hearthstone and Magic, but wanted something that could be
-built in a limited timeframe.
+but complete Unity game that uses real-time API calls. 
 
 How to Play:
 1. Click "Draw Card" to begin each round
@@ -22,16 +20,24 @@ How to Play:
 Code Structure:
 
 The project follows a simple MVC-inspired architecture:
+
 Core Components
 1. GameManager: Controls game state, scoring, and win conditions
 2. UIManager: Handles all UI updates, card display, and button interactions
 3. RoundManager: Manages individual round logic and flow
 4. DeckAPIManager: Interfaces with the Deck of Cards API to provide real cards
+
+View Layer
+UIManager: Handles all visual updates: card images, text, score, and results
+CardFlipper: Animates card flips when cards are revealed
+Unity Canvas: UI layout for menus, score display, buttons
+
 Helper Components
-5. CardModel: Data model for card information and value calculations
-6. ICardService: Interface for deck operations allowing for easy swapping of implementations
-7. MainMenuManager: Handles menu navigation and game start/quit functionality
-8. GameSceneUIManager: Manages in-game UI functionality like restarting or returning to menu
+6. CardModel: Data model for card information and value calculations
+7. ICardService: Interface for deck operations allowing for easy swapping of implementations
+8. MainMenuManager: Handles menu navigation and game start/quit functionality
+9. LocalDeckService: Fully offline fallback using 52-card local deck and resources
+10. GameSceneUIManager: Manages in-game UI functionality like restarting or returning to menu
 
 
 Technical Implementation
@@ -65,6 +71,16 @@ C. Round result display with clear win/loss indication.
 D. Game flow management to prevent interaction during card draws.
 
 E. Scene navigation for moving between menu and game.
+
+F. Flip Card Couritine Driven Animatiom
+
+G. Fully offline fallback using 52-card local deck and resources
+
+Testing & Debug Tools
+1. Force offline mode via Inspector toggle (GameManager → Force Offline)
+2. Debug logs show deck source: API or Local
+3. Fallback sprite support for missing card art
+4. Scene-safe animations (avoids flipping destroyed objects)
 
 Getting Started
 Prerequisites
