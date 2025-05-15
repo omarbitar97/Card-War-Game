@@ -34,22 +34,22 @@ Helper Components
 Technical Implementation
 I ran into a few challenges during development that led to some interesting solutions:
 
-Async API Integration
+1. Async API Integration
 I initially used coroutines for all API calls, but switched to UniTask for better async/await support.
 This cleaned up the code significantly and made error handling more straightforward. You can still
 see some commented-out coroutine code that I left in for reference.
 
-Simulated Network Latency
+2. Simulated Network Latency
 To make the bot opponent feel more realistic, I added a randomized "thinking time" of 600-1500ms.
 This makes it feel less like you're just playing against a simple algorithm and more like you're
 waiting for an actual opponent's move.
 
-Separation of Concerns
+3. Separation of Concerns
 I deliberately separated the card service implementation (DeckAPIManager) behind an interface
 (ICardService). This would allow easy swapping between the real API and a mock version for
 testing, or potentially a local deck implementation if needed.
 
-Additional Features
+4. Additional Features
 Beyond the core requirements, I added:
 
 Proper error handling for API failures and network issues
