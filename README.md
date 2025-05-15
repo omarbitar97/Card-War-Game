@@ -1,8 +1,10 @@
 Card War Game.
+
 A simple card battle game built with Unity where players draw cards and compete against 
 a bot opponent, First to 8 points wins!
 
 Project Overview:
+
 This project started as a technical assignment for a senior unity developer position - build a simple
 but complete Unity game that uses real-time API calls. I chose a card battle mechanic since I've
 always been a fan of card games like Hearthstone and Magic, but wanted something that could be
@@ -18,6 +20,7 @@ How to Play:
 
 
 Code Structure:
+
 The project follows a simple MVC-inspired architecture:
 Core Components
 1. GameManager: Controls game state, scoring, and win conditions
@@ -32,6 +35,7 @@ Helper Components
 
 
 Technical Implementation
+
 I ran into a few challenges during development that led to some interesting solutions:
 
 1. Async API Integration.
@@ -52,11 +56,15 @@ testing, or potentially a local deck implementation if needed.
 4. Additional Features.
 Beyond the core requirements, I added:
 
-A. Proper error handling for API failures and network issues
-B. Visual feedback for the player during opponent's "thinking" time
-C. Round result display with clear win/loss indication
-D. Game flow management to prevent interaction during card draws
-E. Scene navigation for moving between menu and game
+A. Proper error handling for API failures and network issues.
+
+B. Visual feedback for the player during opponent's "thinking" time.
+
+C. Round result display with clear win/loss indication.
+
+D. Game flow management to prevent interaction during card draws.
+
+E. Scene navigation for moving between menu and game.
 
 Getting Started
 Prerequisites
