@@ -20,15 +20,15 @@ How to Play
 Code Structure
 The project follows a simple MVC-inspired architecture:
 Core Components
-GameManager: Controls game state, scoring, and win conditions
-UIManager: Handles all UI updates, card display, and button interactions
-RoundManager: Manages individual round logic and flow
-DeckAPIManager: Interfaces with the Deck of Cards API to provide real cards
+1. GameManager: Controls game state, scoring, and win conditions
+2. UIManager: Handles all UI updates, card display, and button interactions
+3. RoundManager: Manages individual round logic and flow
+4. DeckAPIManager: Interfaces with the Deck of Cards API to provide real cards
 Helper Components
-CardModel: Data model for card information and value calculations
-ICardService: Interface for deck operations allowing for easy swapping of implementations
-MainMenuManager: Handles menu navigation and game start/quit functionality
-GameSceneUIManager: Manages in-game UI functionality like restarting or returning to menu
+5. CardModel: Data model for card information and value calculations
+6. ICardService: Interface for deck operations allowing for easy swapping of implementations
+7. MainMenuManager: Handles menu navigation and game start/quit functionality
+8. GameSceneUIManager: Manages in-game UI functionality like restarting or returning to menu
 
 
 Technical Implementation
