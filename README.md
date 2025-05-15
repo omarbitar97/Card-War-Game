@@ -2,13 +2,13 @@ Card War Game
 A simple card battle game built with Unity where players draw cards and compete against 
 a bot opponent. First to 8 points wins!
 
-Project Overview
+Project Overview:
 This project started as a technical assignment for a senior unity developer position - build a simple
 but complete Unity game that uses real-time API calls. I chose a card battle mechanic since I've
 always been a fan of card games like Hearthstone and Magic, but wanted something that could be
 built in a limited timeframe.
 
-How to Play
+How to Play:
 1. Click "Draw Card" to begin each round
 2. Your card will be drawn from a standard deck
 3. The bot opponent will draw their card (with a simulated network delay)
@@ -17,7 +17,7 @@ How to Play
 6. Use the restart button to play again
 
 
-Code Structure
+Code Structure:
 The project follows a simple MVC-inspired architecture:
 Core Components
 1. GameManager: Controls game state, scoring, and win conditions
@@ -52,11 +52,11 @@ testing, or potentially a local deck implementation if needed.
 4. Additional Features
 Beyond the core requirements, I added:
 
-Proper error handling for API failures and network issues
-Visual feedback for the player during opponent's "thinking" time
-Round result display with clear win/loss indication
-Game flow management to prevent interaction during card draws
-Scene navigation for moving between menu and game
+A. Proper error handling for API failures and network issues
+B. Visual feedback for the player during opponent's "thinking" time
+C. Round result display with clear win/loss indication
+D. Game flow management to prevent interaction during card draws
+E. Scene navigation for moving between menu and game
 
 Getting Started
 Prerequisites
@@ -71,14 +71,14 @@ Installation
 Future Improvements
 If I had more time, I'd love to:
 
-Add sound effects and more visual polish
-Implement card animations (flip, deal, etc.)
-Create a local fallback deck when no internet is available
-Add different game modes (like blackjack or poker
-scoring) Improve UI responsiveness on different screen
+1. Add sound effects and more visual polish
+2. Implement card animations (flip, deal, etc.)
+3. Create a local fallback deck when no internet is available
+4. Add different game modes (like blackjack or poker
+5. scoring) Improve UI responsiveness on different screen
 sizes
-Add player profiles and win tracking
-Implement unit tests, especially for the game logic
+6. Add player profiles and win tracking
+7. Implement unit tests, especially for the game logic
 
 Acknowledgments
 Deck of Cards API for providing the card data and images UniTask
