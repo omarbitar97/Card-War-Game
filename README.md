@@ -28,16 +28,16 @@ Core Components
 4. DeckAPIManager: Interfaces with the Deck of Cards API to provide real cards
 
 View Layer
-UIManager: Handles all visual updates: card images, text, score, and results
-CardFlipper: Animates card flips when cards are revealed
-Unity Canvas: UI layout for menus, score display, buttons
+1. UIManager: Handles all visual updates: card images, text, score, and results
+2. CardFlipper: Animates card flips when cards are revealed
+3. Unity Canvas: UI layout for menus, score display, buttons
 
 Helper Components
-6. CardModel: Data model for card information and value calculations
-7. ICardService: Interface for deck operations allowing for easy swapping of implementations
-8. MainMenuManager: Handles menu navigation and game start/quit functionality
-9. LocalDeckService: Fully offline fallback using 52-card local deck and resources
-10. GameSceneUIManager: Manages in-game UI functionality like restarting or returning to menu
+1. CardModel: Data model for card information and value calculations
+2. ICardService: Interface for deck operations allowing for easy swapping of implementations
+3. MainMenuManager: Handles menu navigation and game start/quit functionality
+4. LocalDeckService: Fully offline fallback using 52-card local deck and resources
+5. GameSceneUIManager: Manages in-game UI functionality like restarting or returning to menu
 
 
 Technical Implementation
